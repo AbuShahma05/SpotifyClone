@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Varela Round", sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.brand{
+    display: flex;
+    align-items: center ;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.same{
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 0 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: black;
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    width: 50%;
+    margin: 23px auto;
+    border: 12px;
+    padding: 34px;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-image: url(75EA2BAA-C998-467D-94D6-98DBC0C05F70.jpg);
+    background-size: cover;
+}
+
+.bottom{
+    position: sticky;
+    height: 75px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 3px;
+}
+
+.icons i{
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    height: 100px;
+    width: 60%;
+    cursor: pointer;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    width: 65%;
+    max-width: 100%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 34px;
+    padding: 10px;
+}
+
+.songItem img{
+    width: 35px;
+    height: 35px;
+    margin: 0 23px;
+    border-radius: 34px;
+    object-fit: cover;
+}
+
+.songItem .songName {
+    flex-grow: 1;                 /* Allows the song name to take up available space */
+    padding-left: 10px;           /* Adds space between image and song name */
+}
+
+.songItem .songListPlay {
+    display: flex;                /* Flex for aligning play controls and timestamp */
+    align-items: center;
+}
+
+.songListPlay .timeStamp {
+    margin-left: 10px;            /* Space between time and play button */
+}
+
+.timeStamp{
+    margin: 0 23px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.logo {
+    width: 40px;  /* Adjust this value to control the size */
+    height: 40px; /* Keep the width and height proportional for a clean look */
+    margin-right: 10px; /* Add some space between the logo and the text */
+    object-fit: cover; /* Ensures the image keeps its aspect ratio */
+    border-radius: 50%; /* If you want the logo to be circular */
+}
+
+.Songlist {
+    display: flex;
+    flex-wrap: wrap;   /* Allows the items to wrap if needed */
+    justify-content: center;  /* Centers the song items horizontally */
+    width: 100%; /* Ensures the song list spans the full width of the container */
+};
+
+/* Styles for devices wider than 600px */
+@media (min-width: 400px) {
+    .container {
+      width: 50%;
+    }
+  }
+  
+  /* Styles for devices narrower than 600px */
+  @media (max-width: 600px) {
+    .container {
+      width: 50%;
+    }
+  }
+  
